@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Phạm Huỳnh Minh Trọng</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-color': '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold text-gray-900">
+                <span class="text-accent-color">Minh </span><span class="text-accent-color">Trọng</span>
+            </div>
+
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 font-medium">
+                    <li><a href="index.html#home" class="nav-link">Trang chủ</a></li>
+                    <li><a href="index.html#bai1" class="nav-link">Bài tập 01</a></li>
+                    <li><a href="index.html#bai2" class="nav-link">Bài tập 02</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Thư viện ảnh</a></li>
+                    <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <button class="md:hidden text-gray-600 hover:text-accent-color p-2 rounded-lg transition" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-white/95 border-t border-gray-200 shadow-md hidden">
+            <ul class="flex flex-col space-y-1 p-4 font-medium">
+                <li><a href="index.html#home" class="mobile-link">Trang chủ</a></li>
+                <li><a href="index.html#bai1" class="mobile-link">Bài tập 01</a></li>
+                <li><a href="index.html#bai2" class="mobile-link">Bài tập 02</a></li>
+                <li><a href="index.html#gallery" class="mobile-link">Thư viện ảnh</a></li>
+                <li><a href="contact.html" class="mobile-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section class="bg-white p-8 md:p-10 rounded-xl shadow-2xl border-t-4 border-accent-color">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Liên hệ</h1>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Contact Info -->
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Họ và tên:</strong> Phạm Huỳnh Minh Trọng</p>
+                    <p><strong>Email:</strong> <a href="mailto:dez160905@gmail.com" class="text-accent-color hover:underline">dez160905@gmail.com</a></p>
+                    <p><strong>Số điện thoại:</strong> 0909703658</p>
+                    <p><strong>Địa chỉ:</strong> TP. Hồ Chí Minh, Việt Nam</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-4 bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <div>
+                        <label class="block mb-1 font-medium">Họ và tên</label>
+                        <input type="text" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent-color" placeholder="Nhập họ và tên">
+                    </div>
+                    <div>
+                        <label class="block mb-1 font-medium">Email</label>
+                        <input type="email" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent-color" placeholder="Nhập email">
+                    </div>
+                    <div>
+                        <label class="block mb-1 font-medium">Nội dung</label>
+                        <textarea class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent-color" rows="5" placeholder="Nhập tin nhắn"></textarea>
+                    </div>
+                    <button type="submit" class="bg-accent-color text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition">Gửi</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text

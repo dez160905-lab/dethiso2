@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Phạm Huỳnh Minh Trọng</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-color': '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-xl font-bold text-gray-900">
+                <span class="text-accent-color">Minh </span><span class="text-accent-color">Trọng</span>
+            </div>
+
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 font-medium">
+                    <li><a href="index.html#home" class="nav-link">Trang chủ</a></li>
+                    <li><a href="index.html#bai1" class="nav-link">Bài tập 01</a></li>
+                    <li><a href="index.html#bai2" class="nav-link">Bài tập 02</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Thư viện ảnh</a></li>
+                    <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <button class="md:hidden text-gray-600 hover:text-accent-color p-2 rounded-lg transition" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-white/95 border-t border-gray-200 shadow-md hidden">
+            <ul class="flex flex-col space-y-1 p-4 font-medium">
+                <li><a href="index.html#home" class="mobile-link">Trang chủ</a></li>
+                <li><a href="index.html#bai1" class="mobile-link">Bài tập 01</a></li>
+                <li><a href="index.html#bai2" class="mobile-link">Bài tập 02</a></li>
+                <li><a href="index.html#gallery" class="mobile-link">Thư viện ảnh</a></li>
+                <li><a href="contact.html" class="mobile-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <section class="bg-white p-8 md:p-10 rounded-xl shadow-2xl border-t-4 border-accent-color">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6">Về Tôi</h1>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <!-- Avatar -->
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-inner flex-shrink-0">
+                    <img src="images/avatar.jpg" alt="Avatar Phạm Huỳnh Minh Trọng" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Info -->
+                <div class="text-gray-700 md:text-left text-center">
+                    <p class="mb-3"><strong>Họ và tên:</strong> Phạm Huỳnh Minh Trọng</p>
+                    <p class="mb-3"><strong>Ngày sinh:</strong> 16/09/2005</p>
+                    <p class="mb-3"><strong>Email:</strong> <a href="mailto:dez160905@gmail.com" class="text-accent-color hover:underline">dez160905@gmail.com</a></p>
+                    <p class="mb-3"><strong>Số điện thoại:</strong> 0909703658</p>
+                    <p class="mt-4 text-gray-600">Tôi là sinh viên Công nghệ và đam mê phát triển web. Tôi thích tạo ra các dự án web sáng tạo, responsive và thân thiện với người dùng.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 Phạm Huỳnh Minh Trọng - Landing Page cá nhân</p>
+            <div class="space-x-6">
+                <a href="#" class="text-gray-400 hover:text-accent-color transition">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-accent-color transition">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-accent-color transition">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
